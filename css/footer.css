@@ -1,0 +1,49 @@
+footer {
+    background: #222222;
+}
+
+footer h3 {
+    font-size: 1em;
+    margin-top: 70px;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+.footer-social li, .footer-social a {
+    display: inline;
+    font-size: 20px;
+}
+
+.footer-privacypolicy a {
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+}
+
+.footer-social a, .footer-privacypolicy a {
+    color: #ccc;
+    transition: 0.3s;
+}
+
+.footer-social a:hover, .footer-privacypolicy a:hover {
+    color: #D54B00;
+}
+
+.footer-social ul, .footer-privacypolicy p {
+    margin: 20px 0 70px;
+}
+
+/* Copyright */
+
+.copyright {
+    background-color: #000;
+    width: 100%;
+}
+
+.copyright p {
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    padding: 1em;
+    color: #fff;
+}

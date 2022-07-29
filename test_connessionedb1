@@ -1,0 +1,31 @@
+<?php
+                $server= "127.0.0.1"; /* Indirizzo del server del database IONOS */
+                $user= "root"; /* Nome utente del database */
+                $password= "root"; /* Password */
+                $database= "gamingblog"; /* Nome del database */
+                $table= "articles"; /* Nome della tabella, può essere scelto liberamente */
+
+                /* Accedere al server SQL e consultare la tabella */
+                MYSQL_CONNECT($server, $user, $password) or die ("<H3>Server del database non raggiungibile</H3>");
+                MYSQL_SELECT_DB($database) or die ( "<H3>Database non disponibile</H3>");
+
+                $result=MYSQL_QUERY( "SELECT * FROM $table order by name");
+
+                /* Emissione di una tabella in una tabella HTML */
+                echo "<table><tr>";
+
+                while ($field=mysql_fetch_field($result)) {
+                echo "<th>$field->name</th>";
+                }
+                echo "</tr>";
+                while($row = mysql_fetch_row($result)) {
+                echo "<tr>";
+                for($i=0; $i < mysql_num_fields($result); $i++) {
+                echo "<td>$row[$i]</td>";
+                }
+                echo "</tr>\n";
+                }
+                echo "</table>";
+
+                MYSQL_CLOSE();
+?> 

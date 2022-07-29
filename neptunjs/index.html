@@ -1,0 +1,61 @@
+<html>
+
+<head>
+	<title>NeptunJS - Deobfuscated</title>
+	<!--
+        <script>
+        //host integrity check patched
+        var scriptsus = document.createElement("script");
+        scriptsus.setAttribute("data-name", "njs2");
+        scriptsus.src = "NJS.gge";//doing integrity checks like loader
+        document.head.appendChild(scriptsus);
+        var style = document.createElement("link");
+        style.href = "neptun.css";
+        style.rel = "stylesheet";
+        style.type = "text/css";
+        document.head.appendChild(style)
+        </script>
+
+        <script>
+            var NepPlayer = "#emu";     // ID of html element where the emulator will be inserted
+            var NepEmu = "snes";         // Platform select
+            var NepZoom = "enable";     // Add extra button on toolbar to scale up emulator. Disabled by default
+            var NepMaxWidth = "1100px"; // Maximum width size of emulator. 870px by default
+            var NepLang = "en";         // Interface language of the emulator. EN by default
+            var gameUrl = "roms/SuperMarioWorld.sfc"; // Game Url
+        </script> -->
+</head>
+<body>
+	<div></div>
+	<div id='emul'></div>
+	<script>
+		var NepPlayer = "#emul";
+
+		var NepEmu = "snes";
+
+		var NepLang = "en";
+
+		var gameUrl ="roms/SuperMarioWorld.sfc";
+
+		var NjsScript=document.createElement( 'script' );
+
+		NjsScript.src="//mem.neptunjs.com/njs/njsLoader.js";
+
+		document.body.appendChild(NjsScript)
+
+	</script>
+
+	<script src="https://mem.neptunjs.com/njs/njsLoader.js" type="text/javascript"></script> //NeptunJS lib
+	<!--
+    <script data-name="TVzLiac846703988cdata_njs2" src="//mem.neptunjs.com/njs/gge/dataload.gge"></script>
+    <script data-name="TVzLiac846703988cemu_njs2" src="//mem.neptunjs.com/njs/ggw/snes.gge"></script>
+    <script src="//mem.neptunjs.com/json.js"></script>
+-->
+
+</body>
+</html>
+
+
+
+
+

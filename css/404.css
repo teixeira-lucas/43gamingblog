@@ -1,0 +1,55 @@
+.error-page {
+    background-color: #000;
+}
+
+.error-background {
+    background: url("../img/space-invaders-tatics.jpg") no-repeat center center scroll;
+    width: 100%;
+    height: 100vh;
+}
+
+.error-background img {
+    width: 100%;
+
+}
+.error-message {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    padding-top: 55vh;
+}
+
+.error-cta .fas {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.error-cta a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.error-cta a:hover {
+    color: #D54B00;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .error-message {
+        font-size: 1.5em;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+    .error-background {
+        background: url("../img/space-invaders-tatics-responsive.jpg") no-repeat center center scroll;
+    }
+    .error-message {
+        font-size: 1em;
+    }
+    .error-cta {
+        font-size: 0.8em;
+    }
+}

@@ -1,0 +1,34 @@
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.logo {
+    line-height: 100px;
+}
+
+nav {
+    float: right;
+    list-style: none;
+}
+
+nav li {
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 100px;
+    margin-left: 40px;
+    display: inline;
+    color: #fff;
+}
+
+nav a {
+    color: #fff;
+    transition: 0.3s;
+}
+
+nav a:hover, .current-menu-item {
+    color: #D54B00;
+}

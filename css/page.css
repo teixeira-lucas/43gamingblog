@@ -1,0 +1,169 @@
+/* top pagina */
+
+.titolo-pagina {
+    background: url(../img/mario-page-bg.jpg) no-repeat center center scroll;
+    background-size: cover;
+    padding: 230px 0 180px;
+    height: auto;
+}
+
+.titolo-pagina h1 {
+    font-size: 3.5em;
+    color: #fff;
+}
+
+/* Contenuto articolo */
+
+.articolo-img img {
+    box-shadow: 4px 8px 10px #ccc;
+}
+
+.articolo-testo p {
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+.articolo-testo li {
+    font-family: Montserrat, sans-serif;
+    list-style-position: inside;
+    font-size: 1em;
+}
+
+/* Tags Articolo */
+
+.articolo-info {
+    margin: .5em;
+}
+
+.articolo-info .fa-user {
+    margin-left: 1em;
+}
+
+.articolo-info a:hover {
+    color: #D54B00;
+}
+
+.articolo-info .articolo-info-bottom {
+    width: 50%;
+}
+
+.articolo-info .tags-categoria {
+    float: left;
+}
+
+.articolo-info .tags-tag {
+    float: right;
+}
+
+/* Lista giochi piu venduti */
+
+.giochi-piu-venduti .col-4 {
+    padding: .8em;
+}
+
+.giochi-piu-venduti a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Sidebar */
+
+.side-bar {
+    padding-left: 2.5em;
+}
+
+.side-bar .nes-container {
+    box-shadow: 4px 8px 10px #ccc;
+}
+
+.side-bar a {
+    color: #000;
+    transition: .3s;
+}
+
+.side-bar a:hover {
+    color: #D54B00;
+}
+
+.side-bar li {
+    margin: 2em;
+    padding-left: .3em;
+}
+
+.side-bar h3 {
+    color: #D54B00;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.side-bar-categorie a {
+    margin-top: 2rem;
+}
+
+/* pagination */
+
+.pagination a {
+    color: #000;
+    padding: 1.5em;
+}
+
+.pagination a:hover {
+    color: #D54B00;
+    border-style: solid;
+}
+
+.pagination-arrow {
+    font-size: .7em;
+}
+
+
+/* Consoles */
+
+.child-display {
+    padding: 2em;
+    width: 500px;
+    height: 500px;
+}
+
+.child-display img {
+    height: 225px;
+}
+
+.child-display a {
+    text-decoration: none;
+    color: #000;
+}
+
+.child-display a:hover {
+    color: #D54B00;
+}
+
+.child-display .nes-container {
+    box-shadow: 8px 16px 10px #ccc;
+}
+
+.father-display h3 {
+    clear: both;
+}
+
+/* Giochi */
+
+.console-lista-giochi img {
+    max-height: 100px;
+    float: left;
+}
+
+.console-lista-giochi h2 {
+    float: left;
+    padding-top: 2em;
+    margin-left: 2em;
+}
+
+.console-lista-giochi a {
+    text-decoration: none;
+    color: #000;
+}
+
+.console-lista-giochi a:hover {
+    color: #D54B00;
+}

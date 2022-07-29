@@ -1,0 +1,29 @@
+.ultimi-articoli {
+    margin: 140px 0 120px;
+}
+
+.singolo-articolo {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+}
+
+.singolo-articolo img {
+    width: 500px;
+    height: 300px;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
+}
+
+.singolo-articolo .nes-container {
+    max-width: 500px;
+    height: auto;
+}
+
+.singolo-articolo h3 {
+    color: #108DE0;
+}
+
+.articoli .nes-container p {
+    font-family: 'Montserrat', sans-serif;
+    margin: 40px 0;
+}

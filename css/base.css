@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus {  /* liberare i campi input dal valore hover di default (bordo blu) - non è obbligatorio */
+    outline: none;
+}
+
+
+body {
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+p {
+    font-family: Montserrat, sans-serif;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+img {
+    border: none;
+    max-width: 100%; /* l'immagine non supera la sua dimensione originale */
+    height: auto;
+}
+
+.responsive,
+.responsive img { /* trasforma l'immagine in responsive, addattandola */
+    width: 100%;
+    height: auto;
+}
+
+header,
+nav,
+article,
+aside,
+section,
+footer,
+main,
+figure,
+figcaption { /* Dice ai vecchi browser di trattare questi nuovi marcatori di HTML5 come marcatori di blocco */
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a { /* per spezzare le parole lunghe */
+    -ms-world-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.col-1 { /* Griglia (Grid system custom) basandoci sulle 12 colonne con cui è gestito anche Bootstrap -- Che ci permettono di avere una serie di elementi float uno affianco all'altro che vanno ad addattare in base alla risoluzione dei vari dispositivi.*/
+    width: 8.33333%;
+    float: left;
+}
+
+.col-2 {
+    width: 16.66666%;
+    float: left;
+}
+
+.col-3 {
+    width: 25%;
+    float: left;
+}
+
+.col-4 {
+    width: 33.33333%;
+    float: left;
+}
+
+.col-6 {
+    width: 50%;
+    float: left;
+}
+
+.col-8 {
+    width: 66.66666%;
+    float: left;
+}
+
+.col-10 {
+    width: 83.33333%;
+    float: left;
+}
+
+.clearfix::before,
+.clearfix::after { /* alternativa al .clearer. Sfrutta i pseudo elementi 'before' ed 'after' per andare ad assegnare dei valori che permettono di mettere in comunicazioni i blocchi di codice dove sono contenuti dei float senza dover richiamare continuamente il tappo */
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+.clearer {
+    clear: both;
+}
+
+.content {
+    width: 1160px; /* larghezza area del contenuto del sito */
+    margin: 0 auto; /* posiziona il contenuto al centro per creare i layout fissi */
+}
+
+.divider  /* (classe di default che richiameremo diverse volte) Spazi tra i testi o spazi all'interno dei marcatori stessi, dò un padding */{
+    padding: 20px 0;
+}
+
+.spacer {
+    padding: 70px 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.hidden { /* for js */
+    opacity: 0;
+}
+
+.visible { /* for js */
+    opacity: 1;
+}
+
+.primary-color {
+    color: #92cc41;
+}
+
+.secondary-color {
+    color: #108DE0;
+}
+
+.tertiary-color {
+    color: #D54B00;
+}
+

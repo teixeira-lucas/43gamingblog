@@ -1,0 +1,42 @@
+.presentazione-gioco img {
+    max-width: 600px;
+    height: auto;
+}
+
+section .img-p-border-left {
+    width: auto;
+    height: 230px;
+    margin-right: 20px;
+}
+
+section .img-p-border-right {
+    width: auto;
+    height: 230px;
+    margin-left: 20px;
+}
+
+section .img-pokemon-choice {
+    width: 600px;
+    height: auto;
+}
+
+
+section p {
+    font-family: Montserrat, sans-serif;
+    line-height: 2em;
+    text-align: justify;
+
+}
+
+section .paragrafo-1:first-letter {
+    font-family: "Press Start 2P";
+    font-size: 1.2em;
+}
+
+#emu {
+    padding: 2em;
+}
+
+.emulatore-non-disponibile {
+    display: none;
+}

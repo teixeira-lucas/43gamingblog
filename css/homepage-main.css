@@ -1,0 +1,24 @@
+.homepage-main {
+    background: url("../img/mario-main-bg.jpg") no-repeat center center scroll;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.homepage-main-cta {
+    padding-top: 50vh;
+}
+
+.homepage-main-cta h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 80px;
+}
+
+.homepage-main-cta h3 {
+    color: #fff;
+}
+
+.separatore-main {
+    height: 65px;
+}

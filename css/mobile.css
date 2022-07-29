@@ -1,0 +1,313 @@
+/* Desktop, iPad PRO */
+
+/* va a vedere (ancora in desktop: i display da 12", 13" e gli iPad Pro) Quando il contenitore è diventato più grande del monitor, andiamo a rivedere lo stesso (contenitore) assegnandogli un valore che gli permetta di essere percentuale */
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+    .content {
+        width: 96%; /* per staccare da destra e sinistra */
+        margin: 0 2%; /* riscrivo la regola 'margin auto'. Questo mi permette di avere il mio 100% del contenitore una volta superato il 1170px sarà perfettamente full size */
+    }
+    /* categorie css */
+
+    .categorie .nes-container{
+        padding: 1rem 1rem;
+    }
+
+    /* articoli css */
+
+    .singolo-articolo img {
+        max-width: 450px;
+    }
+
+    .singolo-articolo .nes-container {
+        max-width: 450px;
+    }
+
+    /* page css */
+
+    .titolo-pagina {
+        font-size: .8em;
+    }
+
+}
+
+/* Display da 12", iPad PRO portrait, iPad landscape */
+/* (Da 12" in giù) Segniamo solo una larghezza massima di 1024px */
+@media only screen and (max-width: 1024px) {
+    .content {
+        width: 96%;
+        margin: 0 2%;
+    }
+
+    /* homepage css */
+
+    .homepage-main {
+        background: url("../img/mario-mainbg-1024.png") no-repeat center center scroll;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+    }
+    .separatore-main {
+        height: 35px;
+    }
+
+    /* categorie css */
+
+    .categorie {
+        margin: 10% 4%;
+    }
+    .categorie-description {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    /* page css */
+
+    .giochi-piu-venduti .col-4 {
+        padding: .4em;
+    }
+
+    /* gioco */
+
+    .nes-emulatore {
+        display: none;
+    }
+
+    .emulatore-non-disponibile {
+        display: block;
+    }
+
+    .emulatore-non-disponibile p {
+        font-family: "Press Start 2P";
+    }
+}
+
+
+/* Display 5.5". iPad portrait, iPhone 6, 6s, 7, 8 portrait and landscape, iPhone 5s landscape */
+/* larghezza che copre la maggior parte dei dispositivi smartphone sul mercato */
+@media only screen and (max-width: 768px) {
+    .col-1,
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-6,
+    .col-8,
+    .col-10 {
+        width: 100%;
+        float: none;
+    }
+
+    /* burger button */
+
+    .nav {
+        position: fixed;
+        left: -270px;
+        width: 260px;
+        height: 100%;
+        top: 0;
+        z-index: 99999;
+        background-color: #222;
+        transition: transform .5s ease-in-out;
+        margin-right: 0;
+        float: none;
+        box-shadow: 4px 4px 12px rgba(0,0,0,0.4);
+    }
+    .wide {
+        transform: translate(270px, 0);
+    }
+    .nav li {
+        display: block;
+        line-height: 50px;
+    }
+    .nav li:first-child {
+        padding-top: 100px;
+    }
+    .burger-button {
+        display: block;
+    }
+
+    /* home page css */
+
+    .homepage-main h1 {
+        font-size: 60px;
+    }
+    .homepage-main-cta h3 {
+        font-size: 1em;
+    }
+    .separatore-main {
+        height: 30px;
+    }
+
+    /* categorie css */
+
+    .categorie {
+        margin: 10% 4%;
+    }
+    .nes-container {
+        padding: 1rem 1.5rem;
+    }
+    .fadeInRight {
+        animation-delay: 0s;
+    }
+
+    /* articoli css */
+
+    .singolo-articolo img {
+        height: auto;
+    }
+
+    /* page css */
+
+    .titolo-pagina {
+        background: url(../img/mario-page-bg.jpg) no-repeat center center scroll;
+        background-size: cover;
+        padding: 150px 0 100px;
+        height: auto;
+    }
+
+    .titolo-pagina h1 {
+        font-size: 1.8em;
+    }
+
+    .side-bar {
+        padding: 0;
+    }
+
+    .giochi-piu-venduti .col-4 {
+        padding: 5em;
+    }
+
+}
+/* mobile/smartphones */
+@media only screen and (max-width: 450px) {
+    .content {
+        width: 92%;
+        margin: 0 auto;
+    }
+    /* homepage css */
+
+    .homepage-main h1 {
+        font-size: 2.5em;
+    }
+    .homepage-main-cta h3 {
+        font-size: 1em;
+    }
+    /* button css */
+
+    button {
+        height: 50px;
+        width: 140px;
+    }
+    .nes-btn {
+        font-size: 15px;
+    }
+    .nes-container {
+        padding: 1rem 0.5rem;
+    }
+
+    /* controler */
+
+    .controler {
+        display: none;
+    }
+    .snes-controller-responsive {
+        display: block;
+        width: 100%;
+    }
+
+    /* categorie css */
+
+    .categorie-description {
+        font-size: 12px;
+    }
+
+    /* page css */
+
+    .titolo-pagina {
+        background: url(../img/mario-page-bg-responsive.jpg) no-repeat center center scroll;
+        background-size: cover;
+        padding: 130px 0 80px;
+        height: auto;
+    }
+
+    .articolo-testo p {
+        font-size: 1.1em;
+    }
+
+    .articolo-testo li {
+        font-size: .9em;
+    }
+
+    .hidden-coin {
+        display: none;
+    }
+
+    .giochi-piu-venduti .col-4 {
+        padding: 1em;
+    }
+
+    /* gioco */
+
+    .presentazione-gioco img {
+        width: 92%;
+        height: auto;
+    }
+
+    .descrizione-gioco {
+        text-align: center;
+    }
+
+    .descrizione-gioco .img-p-border-left, .descrizione-gioco .img-p-border-right {
+        float: none;
+        margin-bottom: 2em;
+    }
+}
+/* Display 4", iPhone 5s portrait */
+@media only screen and (max-width:320px) {
+
+    /* homepage css */
+
+    .homepage-main h1 {
+        font-size: 2em;
+    }
+    .homepage-main-cta h3 {
+        font-size: 0.8em;
+    }
+
+    /* button css */
+
+    button {
+        height: 45px;
+        width: 130px;
+    }
+    .nes-btn {
+        font-size: 14px;
+    }
+
+    /* categorie css */
+
+    .categorie-description {
+        margin-top: 10px;
+        font-size: 10px;
+    }
+    
+    /* page css */
+
+    .titolo-pagina {
+        background: url(../img/mario-page-bg-responsive.jpg) no-repeat center center scroll;
+        background-size: cover;
+        padding: 110px 0 60px;
+        height: auto;
+    }
+
+    .titolo-pagina h1 {
+        font-size: 1.3em;
+    }
+
+    .hidden-coin-4inch {
+        display: none;
+    }
+
+    .giochi-piu-venduti h1 {
+        font-size: 1.5em;
+    }
+}

@@ -1,0 +1,25 @@
+.categorie {
+    margin: 0 5%;
+}
+.categorie a {
+    color: #000;
+}
+
+.categorie p {
+    margin-top: 10px;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+.categorie .nes-container{
+    padding: 1rem 1rem;
+}
+
+.fadeInLeft {
+    animation-delay: 0.1s;
+}
+
+.fadeInRight {
+    /*animation-duration: 3s;*/
+    animation-delay: 0.4s;
+    /*animation-iteration-count: infinite;*/
+}
